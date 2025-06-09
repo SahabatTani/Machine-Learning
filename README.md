@@ -11,6 +11,134 @@ Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
 - [*Dataset Penyakit Tanaman Mangga*](https://www.kaggle.com/datasets/aryashah2k/mango-leaf-disease-dataset) 
 
 ---
+## Categories of Plant Disease:  
+### Tanaman Padi
+1. *Brown Spot*  
+   - *Indikasi*: Bercak bulat atau oval cokelat dengan pusat terang pada daun dan gabah, mengganggu fotosintesis dan menurunkan kualitas hasil panen.
+   - *Penyebab*: Jamur Bipolaris oryzae pada kondisi lembap dan benih terinfeksi.  
+   - *Solusi*: Gunakan benih sehat, perbaiki nutrisi tanah (K dan P), tanam varietas tahan, semprot fungisida saat gejala awal.
+ 
+2. *Neck Blast*  
+   - *Indikasi*: Leher malai hitam/cokelat gelap, malai kering dan tidak terisi.
+   - *Penyebab*:  Jamur Magnaporthe oryzae pada fase berbunga.
+   - *Solusi*: Gunakan varietas tahan, hindari kelembapan tinggi, hindari pupuk N berlebih, semprot fungisida sistemik.
+
+3. *Leaf Scald*  
+   - *Indikasi*: Bercak cokelat tua atau ungu, tengah abu-abu, lesi memanjang pada daun.  
+   - *Penyebab*:  Jamur Microdochium oryzae, muncul pada kelembapan tinggi.
+   - *Solusi*: Gunakan varietas tahan, jaga sanitasi, hindari pupuk N berlebih, gunakan fungisida saat gejala awal.
+
+4. *Narrow Brown Leaf Spot*  
+   - *Indikasi*: Bercak sempit memanjang cokelat/keabu-abuan, menyebabkan daun mengering.
+   - *Penyebab*:  Jamur Cercospora oryzae, diperparah kelembapan dan kurang hara.
+   - *Solusi*:  Gunakan varietas tahan, perbaiki pemupukan (K dan P), jaga sirkulasi udara, gunakan fungisida.
+
+5. *Sheath Blight*  
+   - *Indikasi*: Bercak oval hijau pada pelepah yang membesar, disertai miselium putih. 
+   - *Penyebab*: Jamur Rhizoctonia solani, muncul pada lahan lembap dan padat.
+   - *Solusi*: Gunakan varietas tahan, hindari pupuk N berlebih, atur jarak tanam, semprot fungisida.
+ 
+6. *Tungro*  
+   - *Indikasi*: Daun menguning dari ujung, tanaman kerdil, kasar, dan mati cepat. 
+   - *Penyebab*: Virus RTBV dan RTSV yang disebarkan wereng hijau.
+   - *Solusi*: Gunakan varietas tahan, kendalikan wereng, tanam serempak, lakukan rotasi tanaman.
+  
+7. *Hispa*  
+   - *Indikasi*: Daun bergaris putih transparan, menggulung dan rusak berat.
+   - *Penyebab*:  Serangga Dicladispa armigera.  
+   - *Solusi*: Tanam serempak, buang tanaman rusak, gunakan insektisida nabati/kimia.
+8. *Bacterial Leaf Blight*  
+   - *Indikasi*: Daun menguning dari ujung, muncul bercak berair yang mengering.  
+   - *Penyebab*:Bakteri Xanthomonas oryzae pv. oryzae.
+   - *Solusi*:  Gunakan varietas tahan, benih sehat, hindari pupuk N berlebih, semprot bakterisida.
+
+9. *Leaf Blast*  
+   - *Indikasi*: Bercak belah ketupat abu-abu dengan pinggir cokelat, daun mengering. 
+   - *Penyebab*: Jamur Magnaporthe oryzae.
+   - *Solusi*: Gunakan varietas tahan, hindari tanam saat musim hujan puncak, semprot fungisida saat awal gejala.
+
+### Tanaman Jagung
+1. *Gray Leaf Spot*  
+   - *Indikasi*: Bercak persegi panjang sempit berwarna abu-abu keperakan atau cokelat pada daun, awalnya muncul di daun bawah lalu menyebar ke atas. Infeksi berat menyebabkan daun mati dan menurunkan hasil panen.  
+   - *Penyebab*: Jamur Cercospora zeae-maydis, berkembang di cuaca hangat dan lembap.
+   - *Solusi*: Gunakan varietas tahan, lakukan rotasi tanaman, atur jarak tanam, dan aplikasikan fungisida sistemik saat gejala awal muncul.
+2. *Common Rust*  
+   - *Indikasi*:  Pustula cokelat keemasan berbentuk oval kecil di permukaan daun. Daun menguning, nekrosis, dan kering pada infeksi berat. 
+   - *Penyebab*: Jamur Puccinia sorghi, menyebar lewat spora dan tumbuh optimal pada kelembapan tinggi dan suhu 15–25°C. 
+   - *Solusi*: Gunakan varietas tahan, lakukan rotasi tanaman, atur sirkulasi udara, bersihkan sisa tanaman, dan aplikasikan fungisida.
+ 
+3. *Blight*  
+   - *Indikasi*: NCLB menyebabkan lesi panjang keabu-abuan ("cerutu"), SCLB menyebabkan bercak kecil cokelat muda. Infeksi berat mengeringkan daun. 
+   - *Penyebab*: Jamur Exserohilum turcicum (NCLB) dan Bipolaris maydis (SCLB), berkembang di lingkungan lembap. 
+   - *Solusi*: Gunakan varietas tahan, rotasi tanaman, bersihkan sisa tanaman, hindari penanaman berdekatan, dan gunakan fungisida saat gejala awal muncul.
+
+### Tanaman Singkong
+1. *Bacterial Blight*  
+   - *Indikasi*: Bercak basah pada daun, daun keriting dan gugur, luka gelap di batang, hingga pembusukan batang.  
+   - *Penyebab*:  Bakteri Xanthomonas axonopodis pv. manihotis, menyebar lewat air, alat, dan bahan tanam terinfeksi.  
+   - *Solusi*: Gunakan stek sehat, pangkas bagian terinfeksi, jaga kebersihan alat, rotasi tanaman, serta semprot bakterisida berbahan tembaga saat awal gejala atau musim hujan.
+   
+2. *Blight*  
+   - *Indikasi*: Bercak lonjong atau kecil kecokelatan yang menyebar cepat, menyebabkan daun kering total.
+   - *Penyebab*:  Jamur Exserohilum turcicum (NCLB) dan Bipolaris maydis (SCLB).
+   - *Solusi*: Gunakan varietas tahan, lakukan rotasi, bersihkan sisa tanaman, dan semprot fungisida sejak gejala awal.
+
+3. *Green Mottle*  
+   - *Indikasi*: Belang hijau tak beraturan, daun keriting, tanaman kerdil. 
+   - *Penyebab*: Virus CGMV, ditularkan melalui stek terinfeksi dan serangga penghisap.
+   - *Solusi*: Gunakan stek sehat, buang tanaman terinfeksi, dan semprot insektisida untuk kendalikan vektor.
+
+4. *Brown Streak Disease*  
+   - *Indikasi*: Daun menguning di tulang daun, umbi bergaris cokelat kehitaman dan membusuk, pertumbuhan terhambat. 
+   - *Penyebab*: Virus CBSV atau UCBSV, ditularkan oleh kutu putih dan stek terinfeksi.  
+   - *Solusi*: Gunakan varietas tahan, tanam stek sehat, cabut tanaman terinfeksi berat, lakukan rotasi, dan kendalikan kutu putih dengan insektisida.
+ 
+5. *Mosaic Disease*  
+   - *Indikasi*: Pola mosaik hijau tua-muda, daun keriting, tanaman kerdil dan bercabang, umbi kecil. 
+   - *Penyebab*: Virus CMV, disebarkan oleh kutu putih dan bahan tanam.  
+   - *Solusi*: Gunakan varietas tahan, stek sehat, musnahkan tanaman sakit, bersihkan alat dan lahan, serta semprot insektisida untuk kendalikan vektor.
+
+### Tanaman Mangga
+1. *Anthracnose (Antraknosa)*  
+   - *Indikasi*: Bercak hitam atau coklat pada daun, buah rontok.  
+   - *Penyebab*: Jamur Colletotrichum gloeosporioides.  
+   - *Solusi*: Pangkas bagian yang terinfeksi, hindari kelembapan tinggi. 
+
+2. *Bacterial Canker (Kanker Bakteri)*  
+   - *Indikasi*: Luka berair pada batang atau daun, kadang bau busuk.  
+   - *Penyebab*: Bakteri Xanthomonas campestris.  
+   - *Solusi*: Pangkas bagian terinfeksi, semprot dengan antibiotik.
+   
+3. *Cutting Weevil (Kumbang Pemotong)*  
+   - *Indikasi*: Ujung daun atau tunas muda tampak digigit atau terpotong.  
+   - *Penyebab*: Serangga Deporaus marginatus.
+   - *Solusi*: Pangkas bagian terinfeksi, semprot dengan antibiotik.
+
+4. *Die Black (Daun Mati Menghitam)*  
+   - *Indikasi*: Daun menghitam dan mengering, sering mulai dari tepi daun.
+   - *Penyebab*: Kekeringan ekstrem, penyakit sekunder.
+   - *Solusi*: Perbaiki sistem irigasi, periksa kemungkinan infeksi lain.
+ 
+5. *Gall Midge (Lalat Empedu)*  
+   - *Indikasi*: Daun menggulung atau bengkak, tunas tidak berkembang.
+   - *Penyebab*: Serangga Procontarinia matteianar.
+   - *Solusi*: Buang daun terinfeksi, semprot insektisida sebelum musim hujan.
+   
+6. *Healthy (Sehat)*  
+   - *Indikasi*: Daun hijau segar, tidak ada bercak, tidak ada kerusakan.
+   - *Penyebab*: Nutrisi tanaman telah tercukupi dengan baik.
+   - *Solusi*: Lanjutkan pemeliharaan yang baik.
+ 
+7. *Powdery Mildew (Embun Tepung)*  
+   - *Indikasi*: Lapisan putih seperti bedak di permukaan daun, tunas muda mati.
+   - *Penyebab*: Jamur Oidium mangiferae.
+   - *Solusi*: Semprot fungisida, pangkas tanaman agar sirkulasi udara baik.
+
+8. *Scooty Mould (Jelaga Hitam)*  
+   - *Indikasi*: Lapisan hitam seperti jelaga di permukaan daun.
+   - *Penyebab*: Pertumbuhan jamur pada ekskresi serangga (misal: kutu daun).
+   - *Solusi*: Kendalikan serangga penyebab, bersihkan daun.
+---
 
 ## Dataset Structures
 
