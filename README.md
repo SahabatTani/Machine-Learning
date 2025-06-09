@@ -40,8 +40,9 @@ Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer lear
 
 ---
 
-## 📚 Library Overview
+## Tools dan Libraries
 
+- **Kaggle Notebook**: Lingkungan untuk eksekusi kode Jupyter Notebook berbasis cloud dengan akses ke GPU/TPU secara gratis
 - **os, shutil**: Untuk operasi file dan folder, seperti membuat, memindahkan, atau menghapus direktori.
 - **re**: Digunakan untuk pencocokan pola dengan regular expressions.
 - **random**: Untuk pengacakan data, misalnya saat split dataset atau augmentasi.
