@@ -210,8 +210,8 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 ## Training Procedure  
 
 ### Dataset Preparation Deteksi Penyakit Tanaman Padi
-- text
-- text
+- text.
+- text.
 
 ### Model Training Deteksi Penyakit Tanaman Padi  
 - *Optimizer*: Adam dengan learning rate scheduling.  
@@ -221,38 +221,41 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
   - text
 
 ### Dataset Preparation Deteksi Penyakit Tanaman Jagung
-- text
-- text
+- Normalisasi (rescale) pixel gambar menjadi 0-1.
+- Resize gambar : (256,256).
+- Augmentation : Rotasi dan Horizontal Flip. 
 
 ### Model Training Deteksi Penyakit Tanaman Jagung  
-- *Optimizer*: Adam dengan learning rate scheduling.  
-- *Loss Function*: 
-- *Callbacks*:  
-  - text
-  - text
+- Optimizer : Adam dengan learning rate 1e-3.
+- Loss Function : sparse_categorical_crossentropy.
+- Class Weight untuk mengatasi ketidakseimbangan jumlah data antar kelas (class imbalance).
+- Callbacks :
+    - early_stopping untuk menghindari overfitting dan menghemat waktu pelatihan secara otomatis.
+    - reduce_lr untuk mengurangi learning rate secara otomatis jika performa model (val_loss) berhenti membaik.
+    - model_checkpoint untuk menyimpan bobot model terbaik selama pelatihan ke file, berdasarkan metrik tertentu. 
 
 ### Dataset Preparation Deteksi Penyakit Tanaman Singkong
-- Data undersampling membatasi jumlah maksimal data 2574
+- Data undersampling membatasi jumlah maksimal data 2574.
 - Resize images ke (299, 299).
 - Augmentation: RandomFlip, RandomRotation, and RandomZoom.
-- Class weight untuk menangani imbalance pada dataset
 
 ### Model Training Deteksi Penyakit Tanaman Singkong  
-- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Optimizer*: Adam dengan learning rate 1e-6. 
 - *Loss Function*: sparse_categorical_crossentropy
+- Class Weight untuk mengatasi ketidakseimbangan jumlah data antar kelas (class imbalance).
 - *Callbacks*:  
-  - Early stopping untuk efisiensi pelatihan model.  
-  - Learning rate untuk konvergensi yang lebih baik. 
+  - early_stopping untuk menghindari overfitting dan menghemat waktu pelatihan secara otomatis.
+  - reduce_lr untuk mengurangi learning rate secara otomatis jika performa model (val_loss) berhenti membaik.
 
 ### Dataset Preparation Deteksi Penyakit Tanaman Mangga
 - Resize images ke (150, 150).
 - Augmentation: RandomFlip, RandomRotation, and RandomZoom.
 
 ### Model Training Deteksi Penyakit Tanaman Mangga  
-- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Optimizer*: Adam dengan learning rate 1e-6. 
 - *Loss Function*: categorical_crossentropy.  
 - *Callbacks*:  
-  - Early stopping untuk efisiensi pelatihan model.  
-  - Learning rate untuk konvergensi yang lebih baik. 
+  - early_stopping untuk menghindari overfitting dan menghemat waktu pelatihan secara otomatis.
+  - reduce_lr untuk mengurangi learning rate secara otomatis jika performa model (val_loss) berhenti membaik.
 
 ---
