@@ -5,7 +5,10 @@ Platform SahabatTani menggunakan pendekatan satu model untuk setiap jenis tanama
 
 ## Dataset  
 Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
-- [*Dataset penyakit tanaman padi*]()
-- [*Dataset penyakit tanaman jagung*]()
-- [*Dataset penyakit tanaman singkong*](https://www.kaggle.com/datasets/dipoyonoarga/dataset-singkong)
-- [*Dataset penyakit tanaman mangga*](https://www.kaggle.com/datasets/aryashah2k/mango-leaf-disease-dataset) 
+- [*Dataset Penyakit Tanaman Padi*](https://www.kaggle.com/datasets/loki4514/rice-leaf-diseases-detection)
+- [*Dataset Penyakit Tanaman Jagung*](https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset)
+- [*Dataset Penyakit Tanaman Singkong*](https://www.kaggle.com/datasets/dipoyonoarga/dataset-singkong)
+- [*Dataset Penyakit Tanaman Mangga*](https://www.kaggle.com/datasets/aryashah2k/mango-leaf-disease-dataset) 
+
+---
+
