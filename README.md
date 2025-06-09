@@ -277,19 +277,19 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 ![(Gambar Grafik)](https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/akurasi.png)
 
 ## Results Model Deteksi Penyakit Tanaman Singkong  
-- *Training Accuracy*: ~%  
-- *Validation Accuracy*: ~%  
-- *Test Accuracy*: ~%  
+- *Training Accuracy*: ~87%  
+- *Validation Accuracy*: ~77%  
+- *Test Accuracy*: ~74%  
 
 ### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Singkong  
-![Accuracy and Loss Graph]()  
+![Gambar Grafik](https://github.com/SahabatTani/Machine-Learning/blob/main/Cassava%20Leaf%20Disease%20Detection%20Model/singkong_grafik_akurasi.png)  
 
 ## Results Model Deteksi Penyakit Tanaman Mangga 
-- *Training Accuracy*: ~%  
-- *Validation Accuracy*: ~%  
-- *Test Accuracy*: ~%  
+- *Training Accuracy*: ~96%  
+- *Validation Accuracy*: ~94%  
+- *Test Accuracy*: ~95%  
 
 ### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Mangga 
-![Accuracy and Loss Graph]()  
+![(Gambar Grafik)](https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/akurasi.png)
 
 ---
