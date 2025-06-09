@@ -259,3 +259,37 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
   - reduce_lr untuk mengurangi learning rate secara otomatis jika performa model (val_loss) berhenti membaik.
 
 ---
+
+## Results Model Deteksi Penyakit Tanaman Padi  
+- *Training Accuracy*: ~%  
+- *Validation Accuracy*: ~%  
+- *Test Accuracy*: ~%  
+
+### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Padi  
+![Accuracy and Loss Graph]()  
+
+## Results Model Deteksi Penyakit Tanaman Jagung  
+- *Training Accuracy*: ~94%  
+- *Validation Accuracy*: ~93%  
+- *Test Accuracy*: ~96%  
+
+### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Jagung  
+![(Gambar Grafik)](https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/akurasi.png)
+
+## Results Model Deteksi Penyakit Tanaman Singkong  
+- *Training Accuracy*: ~%  
+- *Validation Accuracy*: ~%  
+- *Test Accuracy*: ~%  
+
+### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Singkong  
+![Accuracy and Loss Graph]()  
+
+## Results Model Deteksi Penyakit Tanaman Mangga 
+- *Training Accuracy*: ~%  
+- *Validation Accuracy*: ~%  
+- *Test Accuracy*: ~%  
+
+### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Mangga 
+![Accuracy and Loss Graph]()  
+
+---
