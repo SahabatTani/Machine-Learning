@@ -77,23 +77,18 @@ Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
    - *Indikasi*: Bercak basah pada daun, daun keriting dan gugur, luka gelap di batang, hingga pembusukan batang.  
    - *Penyebab*:  Bakteri Xanthomonas axonopodis pv. manihotis, menyebar lewat air, alat, dan bahan tanam terinfeksi.  
    - *Solusi*: Gunakan stek sehat, pangkas bagian terinfeksi, jaga kebersihan alat, rotasi tanaman, serta semprot bakterisida berbahan tembaga saat awal gejala atau musim hujan.
-   
-2. *Blight*  
-   - *Indikasi*: Bercak lonjong atau kecil kecokelatan yang menyebar cepat, menyebabkan daun kering total.
-   - *Penyebab*:  Jamur Exserohilum turcicum (NCLB) dan Bipolaris maydis (SCLB).
-   - *Solusi*: Gunakan varietas tahan, lakukan rotasi, bersihkan sisa tanaman, dan semprot fungisida sejak gejala awal.
 
-3. *Green Mottle*  
+2. *Green Mottle*  
    - *Indikasi*: Belang hijau tak beraturan, daun keriting, tanaman kerdil. 
    - *Penyebab*: Virus CGMV, ditularkan melalui stek terinfeksi dan serangga penghisap.
    - *Solusi*: Gunakan stek sehat, buang tanaman terinfeksi, dan semprot insektisida untuk kendalikan vektor.
 
-4. *Brown Streak Disease*  
+3. *Brown Streak Disease*  
    - *Indikasi*: Daun menguning di tulang daun, umbi bergaris cokelat kehitaman dan membusuk, pertumbuhan terhambat. 
    - *Penyebab*: Virus CBSV atau UCBSV, ditularkan oleh kutu putih dan stek terinfeksi.  
    - *Solusi*: Gunakan varietas tahan, tanam stek sehat, cabut tanaman terinfeksi berat, lakukan rotasi, dan kendalikan kutu putih dengan insektisida.
  
-5. *Mosaic Disease*  
+4. *Mosaic Disease*  
    - *Indikasi*: Pola mosaik hijau tua-muda, daun keriting, tanaman kerdil dan bercabang, umbi kecil. 
    - *Penyebab*: Virus CMV, disebarkan oleh kutu putih dan bahan tanam.  
    - *Solusi*: Gunakan varietas tahan, stek sehat, musnahkan tanaman sakit, bersihkan alat dan lahan, serta semprot insektisida untuk kendalikan vektor.
