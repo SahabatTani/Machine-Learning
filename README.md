@@ -157,8 +157,18 @@ Setelah ekstraksi fitur, dilakukan GlobalAveragePooling2D untuk meratakan dimens
   <img src="https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/model_architecture.png" alt="Arsitektur Model Jagung" width="300"/>
 </div>
 
+### 3. Model Architecture untuk Deteksi Penyakit Singkong
+Model deteksi penyakit daun singkong dikembangkan menggunakan pendekatan transfer learning dengan arsitektur EfficientNetB4 sebagai feature extractor. EfficientNetB4 dimuat tanpa lapisan atas (include_top=False) dan menggunakan bobot pralatih dari ImageNet, sehingga mampu mengekstraksi fitur visual secara efisien dari citra daun berukuran 299x299 piksel. Output dari backbone berupa tensor berdimensi 10x10x1792 kemudian diratakan menggunakan GlobalAveragePooling2D untuk mereduksi dimensi spasial menjadi vektor fitur berdimensi 1792.
+
+Selanjutnya, diterapkan lapisan Dropout sebesar 0.5 guna mengurangi risiko overfitting. Pada bagian akhir, lapisan Dense dengan lima neuron dan aktivasi softmax digunakan sebagai output layer untuk mengklasifikasikan citra ke dalam lima kategori, yaitu `bacterial_blight`, `common_rust`, `green_mottle`, dan lainnya.
+
+<div align="center">
+  <img src="https://github.com/SahabatTani/Machine-Learning/blob/main/Cassava%20Leaf%20Disease%20Detection%20Model/cassava_model_structure.png" alt="Arsitektur Model Jagung" width="300"/>
+</div>
+
 
 ---
+
 
 
 ## Tools dan Libraries
