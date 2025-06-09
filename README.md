@@ -132,7 +132,7 @@ Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
 ---
 
 ## Model Architecture
-### 1. Model Architecture untuk Deteksi Penyakit Tanaman Padi
+### Model Architecture untuk Deteksi Penyakit Tanaman Padi
 Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer learning** dengan arsitektur **MobileNet** sebagai _feature extractor_. MobileNet digunakan tanpa lapisan atas (_include_top=False_) dan dimuat dengan bobot pralatih dari ImageNet, sehingga mampu mengekstraksi fitur visual dari gambar daun secara efisien. Di atas MobileNet, ditambahkan lapisan klasifikasi berupa `Flatten`, `Dense` dengan 256 neuron beraktivasi ReLU, `Dropout` sebesar 0.5 untuk mengurangi overfitting, serta `Dense` akhir dengan 10 neuron beraktivasi `softmax` sebagai output layer. Model ini menerima input citra berukuran 224x224 piksel dan mengklasifikasikannya ke dalam sepuluh kategori penyakit seperti `rice_bacterial_leaf_blight`, `rice_leaf_blast`, `rice_tungro`, dan lainnya.
 <div align="center">
   <img src="https://github.com/SahabatTani/Machine-Learning/blob/main/Rice%20Leaf%20Disease%20Detection%20Model/arsitektur.png?raw=true" alt="Arsitektur Model Padi" width="300"/>
@@ -149,7 +149,7 @@ Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer lear
 - **`Dense(10, activation='softmax')`**  
   Layer output dengan 10 neuron (untuk 10 kelas penyakit) dan aktivasi softmax untuk menghasilkan probabilitas prediksi per kelas.
 
-### 2. Model Architecture untuk Deteksi Penyakit Tanaman Jagung
+### Model Architecture untuk Deteksi Penyakit Tanaman Jagung
 Model deteksi penyakit daun jagung dibangun menggunakan arsitektur konvolusional bertingkat yang terdiri dari empat blok utama Conv2D, masing-masing diikuti oleh BatchNormalization dan MaxPooling2D. Model menerima input citra berukuran 256x256 piksel dengan 3 saluran warna. Blok pertama dimulai dengan Conv2D berisi 32 filter, diikuti normalisasi batch dan pooling, yang menghasilkan fitur berukuran 127x127x32. Blok-blok berikutnya secara bertahap menambah kedalaman fitur menjadi 64, 128, hingga 128 channel, sambil mengurangi resolusi spasial menjadi 14x14 piksel.
 
 Setelah ekstraksi fitur, dilakukan GlobalAveragePooling2D untuk meratakan dimensi spasial, diikuti oleh lapisan Dropout sebesar 0.5 guna mencegah overfitting. Selanjutnya, dua lapisan Dense digunakan, masing-masing dengan 64 neuron ReLU dan 4 neuron softmax sebagai output layer. Model ini mengklasifikasikan citra daun jagung ke dalam empat kategori penyakit, seperti  `gray_leaf Spot`, `common_rust`, dan `blight`.
@@ -158,7 +158,7 @@ Setelah ekstraksi fitur, dilakukan GlobalAveragePooling2D untuk meratakan dimens
   <img src="https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/model_architecture.png" alt="Arsitektur Model Jagung" width="300"/>
 </div>
 
-### 3. Model Architecture untuk Deteksi Penyakit Tanaman Singkong
+### Model Architecture untuk Deteksi Penyakit Tanaman Singkong
 Model deteksi penyakit daun singkong dikembangkan menggunakan pendekatan transfer learning dengan arsitektur EfficientNetB4 sebagai feature extractor. EfficientNetB4 dimuat tanpa lapisan atas (include_top=False) dan menggunakan bobot pralatih dari ImageNet, sehingga mampu mengekstraksi fitur visual secara efisien dari citra daun berukuran 299x299 piksel. Output dari backbone berupa tensor berdimensi 10x10x1792 kemudian diratakan menggunakan GlobalAveragePooling2D untuk mereduksi dimensi spasial menjadi vektor fitur berdimensi 1792.
 
 Selanjutnya, diterapkan lapisan Dropout sebesar 0.5 guna mengurangi risiko overfitting. Pada bagian akhir, lapisan Dense dengan lima neuron dan aktivasi softmax digunakan sebagai output layer untuk mengklasifikasikan citra ke dalam lima kategori, yaitu `bacterial_blight`, `common_rust`, `green_mottle`, dan lainnya.
@@ -167,7 +167,7 @@ Selanjutnya, diterapkan lapisan Dropout sebesar 0.5 guna mengurangi risiko overf
   <img src="https://github.com/SahabatTani/Machine-Learning/blob/main/Cassava%20Leaf%20Disease%20Detection%20Model/cassava_model_structure.png" alt="Arsitektur Model Jagung" width="300"/>
 </div>
 
-### 4. Model Architecture untuk Deteksi Penyakit Tanaman Mangga
+### Model Architecture untuk Deteksi Penyakit Tanaman Mangga
 Model deteksi penyakit daun mangga dikembangkan menggunakan arsitektur konvolusional bertingkat yang mengadopsi pendekatan klasik CNN dengan lima blok utama Conv2D dan MaxPooling2D. Model menerima input citra berukuran 150x150 piksel dengan 3 saluran warna. Setiap blok terdiri dari dua hingga tiga lapisan Conv2D berukuran kernel 3x3, diikuti oleh operasi MaxPooling2D untuk menurunkan resolusi spasial dan menangkap fitur penting secara hierarkis. Secara bertahap, jumlah filter meningkat dari 64 pada blok pertama hingga 512 pada blok keempat dan kelima, sementara dimensi spasial berkurang hingga 4x4 piksel.
 
 Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten menjadi vektor berdimensi 8192, kemudian diproses oleh lapisan Dense dengan 512 neuron beraktivasi ReLU. Untuk mengurangi risiko overfitting, digunakan lapisan Dropout sebesar 0.5. Lapisan terakhir adalah Dense dengan 8 neuron beraktivasi softmax sebagai output layer, yang mengklasifikasikan citra ke dalam delapan kategori penyakit, seperti `anthracnose`, `bacterial_canker`, `cutting_weevil`, dan lainnya.
@@ -209,46 +209,46 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 
 ## Training Procedure  
 
-### 1. Dataset Preparation Deteksi Penyakit Tanaman Padi
-- 
-- 
+### Dataset Preparation Deteksi Penyakit Tanaman Padi
+- text
+- text
 
-### 2. Dataset Preparation Deteksi Penyakit Tanaman Jagung
-- 
-- 
+### Model Training Deteksi Penyakit Tanaman Padi  
+- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Loss Function*: 
+- *Callbacks*:  
+  - text
+  - text
 
-### 3. Dataset Preparation Deteksi Penyakit Tanaman Singkong
+### Dataset Preparation Deteksi Penyakit Tanaman Jagung
+- text
+- text
+
+### Model Training Deteksi Penyakit Tanaman Jagung  
+- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Loss Function*: 
+- *Callbacks*:  
+  - text
+  - text
+
+### Dataset Preparation Deteksi Penyakit Tanaman Singkong
 - Data undersampling membatasi jumlah maksimal data 2574
 - Resize images ke (299, 299).
 - Augmentation: RandomFlip, RandomRotation, and RandomZoom.
 - Class weight untuk menangani imbalance pada dataset
 
-### 4. Dataset Preparation Deteksi Penyakit Tanaman Mangga
-- Resize images ke (150, 150).
-- Augmentation: RandomFlip, RandomRotation, and RandomZoom.
-
-### 1. Model Training Deteksi Penyakit Tanaman Padi  
-- *Optimizer*: Adam dengan learning rate scheduling.  
-- *Loss Function*: 
-- *Callbacks*:  
-  - 
-  - 
- 
-### 2. Model Training Deteksi Penyakit Tanaman Jagung  
-- *Optimizer*: Adam dengan learning rate scheduling.  
-- *Loss Function*: 
-- *Callbacks*:  
-  - 
-  - 
-
-### 3. Model Training Deteksi Penyakit Tanaman Singkong  
+### Model Training Deteksi Penyakit Tanaman Singkong  
 - *Optimizer*: Adam dengan learning rate scheduling.  
 - *Loss Function*: sparse_categorical_crossentropy
 - *Callbacks*:  
   - Early stopping untuk efisiensi pelatihan model.  
   - Learning rate untuk konvergensi yang lebih baik. 
 
-### 4. Model Training Deteksi Penyakit Tanaman Mangga  
+### Dataset Preparation Deteksi Penyakit Tanaman Mangga
+- Resize images ke (150, 150).
+- Augmentation: RandomFlip, RandomRotation, and RandomZoom.
+
+### Model Training Deteksi Penyakit Tanaman Mangga  
 - *Optimizer*: Adam dengan learning rate scheduling.  
 - *Loss Function*: categorical_crossentropy.  
 - *Callbacks*:  
