@@ -26,14 +26,12 @@ Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer lear
 <div align="center">
   <img src="https://github.com/SahabatTani/Machine-Learning/blob/main/Rice%20Leaf%20Disease%20Detection%20Model/arsitektur.png?raw=true" alt="Arsitektur Model Padi" width="400"/>
 </div>
+
 - **`Flatten`**  
   Mengubah output tensor 3D dari MobileNet menjadi vektor 1D agar dapat diproses oleh layer fully connected.
-
 - **`Dense(256, activation='relu')`**  
   Layer fully connected dengan 256 neuron dan fungsi aktivasi ReLU untuk menangkap hubungan non-linear antar fitur.
-
 - **`Dropout(0.5)`**  
   Mengurangi risiko overfitting dengan menonaktifkan 50% neuron secara acak saat training.
-
 - **`Dense(10, activation='softmax')`**  
   Layer output dengan 10 neuron (untuk 10 kelas penyakit) dan aktivasi softmax untuk menghasilkan probabilitas prediksi per kelas.
