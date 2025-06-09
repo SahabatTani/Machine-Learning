@@ -204,3 +204,55 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 - **google.colab.files**: Untuk mengunggah atau mengunduh file di lingkungan Google Colab.
 - **tensorflowjs**: Mengkonversi model Keras ke format TensorFlow.js agar dapat dijalankan di browser.
 - **warnings**: Untuk menonaktifkan peringatan selama eksekusi kode.
+
+---
+
+## Training Procedure  
+
+### 1. Dataset Preparation Deteksi Penyakit Tanaman Padi
+- 
+- 
+
+### 2. Dataset Preparation Deteksi Penyakit Tanaman Jagung
+- 
+- 
+
+### 3. Dataset Preparation Deteksi Penyakit Tanaman Singkong
+- Data undersampling membatasi jumlah maksimal data 2574
+- Resize images ke (299, 299).
+- Augmentation: RandomFlip, RandomRotation, and RandomZoom.
+- Class weight untuk menangani imbalance pada dataset
+
+### 4. Dataset Preparation Deteksi Penyakit Tanaman Mangga
+- Resize images ke (150, 150).
+- Augmentation: RandomFlip, RandomRotation, and RandomZoom.
+
+### 1. Model Training Deteksi Penyakit Tanaman Padi  
+- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Loss Function*: 
+- *Callbacks*:  
+  - 
+  - 
+ 
+### 2. Model Training Deteksi Penyakit Tanaman Jagung  
+- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Loss Function*: 
+- *Callbacks*:  
+  - 
+  - 
+
+### 3. Model Training Deteksi Penyakit Tanaman Singkong  
+- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Loss Function*: sparse_categorical_crossentropy
+- *Callbacks*:  
+  - Early stopping untuk efisiensi pelatihan model.  
+  - Learning rate untuk konvergensi yang lebih baik. 
+
+### 4. Model Training Deteksi Penyakit Tanaman Mangga  
+- *Optimizer*: Adam dengan learning rate scheduling.  
+- *Loss Function*: categorical_crossentropy.  
+- *Callbacks*:  
+  - Early stopping untuk efisiensi pelatihan model.  
+  - Learning rate untuk konvergensi yang lebih baik. 
+
+---
