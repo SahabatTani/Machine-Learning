@@ -123,18 +123,13 @@ Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
    - *Indikasi*: Daun menggulung atau bengkak, tunas tidak berkembang.
    - *Penyebab*: Serangga Procontarinia matteianar.
    - *Solusi*: Buang daun terinfeksi, semprot insektisida sebelum musim hujan.
-   
-6. *Healthy (Sehat)*  
-   - *Indikasi*: Daun hijau segar, tidak ada bercak, tidak ada kerusakan.
-   - *Penyebab*: Nutrisi tanaman telah tercukupi dengan baik.
-   - *Solusi*: Lanjutkan pemeliharaan yang baik.
  
-7. *Powdery Mildew (Embun Tepung)*  
+6. *Powdery Mildew (Embun Tepung)*  
    - *Indikasi*: Lapisan putih seperti bedak di permukaan daun, tunas muda mati.
    - *Penyebab*: Jamur Oidium mangiferae.
    - *Solusi*: Semprot fungisida, pangkas tanaman agar sirkulasi udara baik.
 
-8. *Scooty Mould (Jelaga Hitam)*  
+7. *Scooty Mould (Jelaga Hitam)*  
    - *Indikasi*: Lapisan hitam seperti jelaga di permukaan daun.
    - *Penyebab*: Pertumbuhan jamur pada ekskresi serangga (misal: kutu daun).
    - *Solusi*: Kendalikan serangga penyebab, bersihkan daun.
