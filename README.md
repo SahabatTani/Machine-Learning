@@ -135,14 +135,6 @@ Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
    - *Solusi*: Kendalikan serangga penyebab, bersihkan daun.
 ---
 
-## Dataset Structures
-
-- **Train** : Data latih, digunakan oleh model saat training.
-- **Validation** : Data validasi, digunakan untuk evaluasi kinerja model selama training.
-- **Test** : Data pengujian akhir, digunakan untuk menguji model setelah training selesai.
-
----
-
 ## Model Architecture
 ### 1. Model Architecture untuk Deteksi Penyakit Padi
 Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer learning** dengan arsitektur **MobileNet** sebagai _feature extractor_. MobileNet digunakan tanpa lapisan atas (_include_top=False_) dan dimuat dengan bobot pralatih dari ImageNet, sehingga mampu mengekstraksi fitur visual dari gambar daun secara efisien. Di atas MobileNet, ditambahkan lapisan klasifikasi berupa `Flatten`, `Dense` dengan 256 neuron beraktivasi ReLU, `Dropout` sebesar 0.5 untuk mengurangi overfitting, serta `Dense` akhir dengan 10 neuron beraktivasi `softmax` sebagai output layer. Model ini menerima input citra berukuran 224x224 piksel dan mengklasifikasikannya ke dalam sepuluh kategori penyakit seperti `rice_bacterial_leaf_blight`, `rice_leaf_blast`, `rice_tungro`, dan lainnya.
@@ -161,7 +153,18 @@ Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer lear
 - **`Dense(10, activation='softmax')`**  
   Layer output dengan 10 neuron (untuk 10 kelas penyakit) dan aktivasi softmax untuk menghasilkan probabilitas prediksi per kelas.
 
+### 2. Model Architecture untuk Deteksi Penyakit Jagung
+Model deteksi penyakit daun jagung dibangun menggunakan arsitektur konvolusional bertingkat yang terdiri dari empat blok utama Conv2D, masing-masing diikuti oleh BatchNormalization dan MaxPooling2D. Model menerima input citra berukuran 256x256 piksel dengan 3 saluran warna. Blok pertama dimulai dengan Conv2D berisi 32 filter, diikuti normalisasi batch dan pooling, yang menghasilkan fitur berukuran 127x127x32. Blok-blok berikutnya secara bertahap menambah kedalaman fitur menjadi 64, 128, hingga 128 channel, sambil mengurangi resolusi spasial menjadi 14x14 piksel.
+
+Setelah ekstraksi fitur, dilakukan GlobalAveragePooling2D untuk meratakan dimensi spasial, diikuti oleh lapisan Dropout sebesar 0.5 guna mencegah overfitting. Selanjutnya, dua lapisan Dense digunakan, masing-masing dengan 64 neuron ReLU dan 4 neuron softmax sebagai output layer. Model ini mengklasifikasikan citra daun jagung ke dalam empat kategori penyakit, seperti  `gray_leaf Spot`, `common_rust`, dan `blight`.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/model_architecture.png" alt="Arsitektur Model Jagung" width="300"/>
+</div>
+
+
 ---
+
 
 ## Tools dan Libraries
 
