@@ -37,3 +37,31 @@ Model deteksi penyakit daun padi dibangun menggunakan pendekatan **transfer lear
   Mengurangi risiko overfitting dengan menonaktifkan 50% neuron secara acak saat training.
 - **`Dense(10, activation='softmax')`**  
   Layer output dengan 10 neuron (untuk 10 kelas penyakit) dan aktivasi softmax untuk menghasilkan probabilitas prediksi per kelas.
+
+---
+
+## 📚 Library Overview
+
+- **os, shutil**: Untuk operasi file dan folder, seperti membuat, memindahkan, atau menghapus direktori.
+- **re**: Digunakan untuk pencocokan pola dengan regular expressions.
+- **random**: Untuk pengacakan data, misalnya saat split dataset atau augmentasi.
+- **NumPy (`np`)**: Operasi numerik dan manipulasi array multidimensi.
+- **Pandas (`pd`)**: Manipulasi dan analisis data berbasis tabel (DataFrame).
+- **Matplotlib (`plt`, `mpimg`)**: Visualisasi data dan citra seperti grafik akurasi dan loss.
+- **Seaborn (`sns`)**: Visualisasi statistik seperti confusion matrix dengan tampilan yang lebih estetis.
+- **PIL (Image)**: Membaca dan memproses gambar.
+- **TensorFlow (`tf`)**: Framework utama untuk machine learning dan deep learning.
+- **Keras (dari TensorFlow)**: 
+  - `preprocessing`: Untuk augmentasi dan pemrosesan gambar.
+  - `layers`: Membangun layer-layer CNN seperti Conv2D, Dense, dsb.
+  - `models`: Untuk membuat dan memuat model.
+  - `optimizers`: Untuk mengatur algoritma optimasi seperti Adam.
+  - `applications`: Menggunakan arsitektur pretrained seperti MobileNet.
+  - `callbacks`: Mengatur strategi pelatihan seperti EarlyStopping.
+- **Scikit-learn (`sklearn`)**: 
+  - `train_test_split`: Memisahkan dataset.
+  - `metrics`: Mengukur performa model (confusion matrix, klasifikasi).
+  - `utils`: Menghitung class weight untuk dataset tidak seimbang.
+- **google.colab.files**: Untuk mengunggah atau mengunduh file di lingkungan Google Colab.
+- **tensorflowjs**: Mengkonversi model Keras ke format TensorFlow.js agar dapat dijalankan di browser.
+- **warnings**: Untuk menonaktifkan peringatan selama eksekusi kode.
