@@ -12,3 +12,12 @@ Dataset yang digunakan untuk training dan evaluasi model dapat diunduh disini:
 
 ---
 
+## Dataset Structures
+- **Train** : Data latih, digunakan oleh model saat training.
+- **Validation** : Data validasi, digunakan untuk evaluasi kinerja model selama training.
+- **Test** : Data pengujian akhir, digunakan untuk menguji model setelah training selesai.
+
+---
+
+## Model Architecture
+1. Model Architecture untuk Deteksi Penyakit Padi
