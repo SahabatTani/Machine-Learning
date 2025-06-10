@@ -295,3 +295,14 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 ![(Gambar Grafik)](https://raw.githubusercontent.com/SahabatTani/Machine-Learning/refs/heads/main/Corn%20Leaf%20Disease%20Detection%20Model/akurasi.png)
 
 ---
+
+## Cara Menjalankan Program Model
+### 1. **Unduh** Program Model Jupyter Notebook 
+   - [Kode Model Deteksi Penyakit Daun Padi](https://github.com/SahabatTani/Machine-Learning/blob/main/Rice%20Leaf%20Disease%20Detection%20Model/deteksi_penyakit_padi.ipynb)
+   - [Kode Model Deteksi Penyakit Daun Singkong](https://github.com/SahabatTani/Machine-Learning/blob/main/Cassava%20Leaf%20Disease%20Detection%20Model/cassava_leaf_disease_detection_model.ipynb)
+   - [Kode Model Deteksi Penyakit Daun Jagung](https://github.com/SahabatTani/Machine-Learning/blob/main/Corn%20Leaf%20Disease%20Detection%20Model/corn_leaf_disease_model.ipynb)
+   - [Kode Model Deteksi Penyakit Daun Mangga](https://github.com/SahabatTani/Machine-Learning/blob/main/Mango%20Leaf%20Disease%20Detection%20Model/mango_leaf_disease_detection_model.ipynb.ipynb)
+### 2. Upload Notebook Program Model di [Kaggle Notebook](https://www.kaggle.com/code?import=true)
+- Catatan: Untuk Model Deteksi Penyakit Daun Jagung bisa di Upload di [Google Colaboratory](https://colab.research.google.com/)
+### 3. Pastikan Menggunakan Hardware Accelerator **GPU**
+### 4. Untuk
