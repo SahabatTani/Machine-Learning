@@ -305,4 +305,7 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 ### 2. Upload Notebook Program Model di [Kaggle Notebook](https://www.kaggle.com/code?import=true)
 - Catatan: Untuk Model Deteksi Penyakit Daun Jagung bisa di Upload di [Google Colaboratory](https://colab.research.google.com/)
 ### 3. Pastikan Menggunakan Hardware Accelerator **GPU**
-### 4. Untuk
+### 4. Untuk Kode Program yang dijalankan di Kaggle, silahkan pilih **File Input** dataset dan pilih dari yang tersedia di bagian [Dataset](https://github.com/SahabatTani/Machine-Learning/blob/main/README.md#dataset)
+### 5. Jalankan semua blok kodenya dengan memilih Run All
+
+---
