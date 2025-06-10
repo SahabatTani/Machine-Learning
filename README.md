@@ -210,15 +210,17 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 ## Training Procedure  
 
 ### Dataset Preparation Deteksi Penyakit Tanaman Padi
-- text.
-- text.
+- Normalisasi (rescale) pixel gambar menjadi 0-1.
+- Resize gambar ke ukuran (224,224) piksel agar sesuai dengan input MobileNet.
+- Augmentasi data menggunakan ImageDataGenerator: rotasi acak, zoom, shear, horizontal flip.
 
 ### Model Training Deteksi Penyakit Tanaman Padi  
-- *Optimizer*: Adam dengan learning rate scheduling.  
-- *Loss Function*: 
-- *Callbacks*:  
-  - text
-  - text
+- *Optimizer*: Adam dengan skema learning rate dinamis (berubah selama pelatihan).
+- *Loss Function*: categorical_crossentropy (karena label dalam format one-hot).
+- *Class Weight*: digunakan untuk menangani distribusi data yang tidak seimbang antar kelas.
+- *Callbacks*:
+  - **EarlyStopping** untuk menghentikan pelatihan saat validasi loss tidak membaik dalam beberapa epoch.
+  - **ReduceLROnPlateau** untuk mengurangi learning rate jika validasi loss stagnan, membantu pelatihan tetap stabil.
 
 ### Dataset Preparation Deteksi Penyakit Tanaman Jagung
 - Normalisasi (rescale) pixel gambar menjadi 0-1.
