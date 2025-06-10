@@ -261,12 +261,12 @@ Setelah blok konvolusional, fitur yang diperoleh diratakan menggunakan Flatten m
 ---
 
 ## Results Model Deteksi Penyakit Tanaman Padi  
-- *Training Accuracy*: ~%  
-- *Validation Accuracy*: ~%  
-- *Test Accuracy*: ~%  
+- *Training Accuracy*: ~79%  
+- *Validation Accuracy*: ~78%  
+- *Test Accuracy*: ~82%  
 
 ### Accuracy dan Loss Graph Model Deteksi Penyakit Tanaman Padi  
-![Accuracy and Loss Graph]()  
+![Accuracy and Loss Graph](https://github.com/SahabatTani/Machine-Learning/blob/main/Rice%20Leaf%20Disease%20Detection%20Model/grafik%20accuracy.png)  
 
 ## Results Model Deteksi Penyakit Tanaman Jagung  
 - *Training Accuracy*: ~94%  
